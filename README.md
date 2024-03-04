@@ -48,3 +48,6 @@ Copy password
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 ![Untitled-design.png](https://i.postimg.cc/d13r0gR0/Untitled-design.png)
+
+now Jenkins is ready to use
+![image](https://i.postimg.cc/RZXvdtg9/image.png)
