@@ -73,3 +73,4 @@ chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
 cd sonarqube-9.4.0.54424/bin/linux-x86-64/
 ./sonar.sh start
 ```
+![Screenshot-from-2024-03-05-17-38-07.png](https://i.postimg.cc/5NRc0Kvv/Screenshot-from-2024-03-05-17-38-07.png)
