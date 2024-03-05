@@ -92,8 +92,18 @@ usermod -aG docker jenkins
 usermod -aG docker arbab
 systemctl restart docker
 ```
+Install Kubectl
+```
+sudo apt-get install -y apt-transport-https ca-certificates curl
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.29/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+sudo apt-get update
+sudo apt-get install -y kubectl
+```
 Install Minilkube which will create local Kubernetes cluster
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```
+start and create kubernetes local cluster
+```minikube start```
+![Screenshot-from-2024-03-05-20-44-51.png](https://i.postimg.cc/4xYNJcrB/Screenshot-from-2024-03-05-20-44-51.png)
