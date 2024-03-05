@@ -121,3 +121,4 @@ check running pods in the operators namespaces
 ```
 kubectl get pods -n operators
 ```
+![Screenshot-from-2024-03-05-22-27-33.png](https://i.postimg.cc/MTDqQWT6/Screenshot-from-2024-03-05-22-27-33.png)
