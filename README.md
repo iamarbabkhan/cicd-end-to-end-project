@@ -84,3 +84,11 @@ Generate the tokens to Authenticate Jenkins with sonalqube
 - go to systems -> global credentials -> add credentials
 - paste the tokens on **secret** section
 ![Screenshot-from-2024-03-05-18-01-33.png](https://i.postimg.cc/QCM10Zsx/Screenshot-from-2024-03-05-18-01-33.png)
+Install docker and grant user permission to docker
+```
+sudo su -
+sudo apt install docker.io -y
+usermod -aG docker jenkins
+usermod -aG docker arbab
+systemctl restart docker
+```
