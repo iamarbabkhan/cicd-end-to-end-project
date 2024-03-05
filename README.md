@@ -74,3 +74,5 @@ cd sonarqube-9.4.0.54424/bin/linux-x86-64/
 ./sonar.sh start
 ```
 ![Screenshot-from-2024-03-05-17-38-07.png](https://i.postimg.cc/5NRc0Kvv/Screenshot-from-2024-03-05-17-38-07.png)
+- now sonarqube will be access from localhost:9000
+![Screenshot-from-2024-03-05-17-41-13.png](https://i.postimg.cc/QCw5zr9h/Screenshot-from-2024-03-05-17-41-13.png)
