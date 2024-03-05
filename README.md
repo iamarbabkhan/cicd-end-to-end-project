@@ -84,7 +84,12 @@ Generate the tokens to Authenticate Jenkins with sonalqube
 - go to systems -> global credentials -> add credentials
 - paste the tokens on **secret** section
 ![Screenshot-from-2024-03-05-18-01-33.png](https://i.postimg.cc/QCM10Zsx/Screenshot-from-2024-03-05-18-01-33.png)
-Install docker and grant user permission to docker
+
+add dockerhub credential
+![Screenshot-from-2024-03-05-23-36-52.png](https://i.postimg.cc/856XF7J6/Screenshot-from-2024-03-05-23-36-52.png)
+add github credential
+- i have generated tokens in github and paste inside secret section in jenkins
+![Screenshot-from-2024-03-05-23-44-23.png](https://i.postimg.cc/76q3Mbbc/Screenshot-from-2024-03-05-23-44-23.png)
 ```
 sudo su -
 sudo apt install docker.io -y
