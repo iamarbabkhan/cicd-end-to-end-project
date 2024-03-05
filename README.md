@@ -76,3 +76,11 @@ cd sonarqube-9.4.0.54424/bin/linux-x86-64/
 ![Screenshot-from-2024-03-05-17-38-07.png](https://i.postimg.cc/5NRc0Kvv/Screenshot-from-2024-03-05-17-38-07.png)
 - now sonarqube will be access from localhost:9000
 ![Screenshot-from-2024-03-05-17-41-13.png](https://i.postimg.cc/QCw5zr9h/Screenshot-from-2024-03-05-17-41-13.png)
+Generate the tokens to Authenticate Jenkins with sonalqube
+- My account -> Security -> Generate
+![image-1.png](https://i.postimg.cc/FR4887ks/image-1.png)
+- Copy the token
+- go to jenkins -> manage jenkins -> credential
+- go to systems -> global credentials -> add credentials
+- paste the tokens on **secret** section
+![Screenshot-from-2024-03-05-18-01-33.png](https://i.postimg.cc/QCM10Zsx/Screenshot-from-2024-03-05-18-01-33.png)
