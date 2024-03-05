@@ -56,7 +56,7 @@ now Jenkins is ready to use
 ![Screenshot-from-2024-03-04-23-35-39.png](https://i.postimg.cc/W4PT2PXW/Screenshot-from-2024-03-04-23-35-39.png)
 ![Screenshot-from-2024-03-05-00-03-50.png](https://i.postimg.cc/pLBqdwvV/Screenshot-from-2024-03-05-00-03-50.png)
 - Go to manage jenkins -> plugins -> available plugins
-download docker pipeline plugin
+- download docker pipeline plugin
 ![Screenshot-from-2024-03-05-00-07-28.png](https://i.postimg.cc/43D52sb5/Screenshot-from-2024-03-05-00-07-28.png)
 download sonarqube scanner plugin
 ![Screenshot-from-2024-03-05-00-11-43.png](https://i.postimg.cc/1tc970N3/Screenshot-from-2024-03-05-00-11-43.png)
