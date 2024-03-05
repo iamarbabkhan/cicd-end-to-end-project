@@ -125,5 +125,6 @@ kubectl create -f https://operatorhub.io/install/argocd-operator.yaml
 check running pods in the operators namespaces
 ```
 kubectl get pods -n operators
+- Argo CD is running perfectly
 ```
 ![Screenshot-from-2024-03-05-22-27-33.png](https://i.postimg.cc/MTDqQWT6/Screenshot-from-2024-03-05-22-27-33.png)
