@@ -107,3 +107,10 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 start and create kubernetes local cluster
 ```minikube start```
 ![Screenshot-from-2024-03-05-20-44-51.png](https://i.postimg.cc/4xYNJcrB/Screenshot-from-2024-03-05-20-44-51.png)
+
+Install Argo CD using kubernets operator
+- [OperatorHub](https://operatorhub.io/operator/argocd-operator)
+```
+curl -sL https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.27.0/install.sh | bash -s v0.27.0
+
+```
