@@ -105,8 +105,9 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```
 start and create kubernetes local cluster
-```minikube start```
-![Screenshot-from-2024-03-05-20-44-51.png](https://i.postimg.cc/4xYNJcrB/Screenshot-from-2024-03-05-20-44-51.png)
+
+```minikube start --driver=docker```
+![Screenshot-from-2024-03-05-22-08-52.png](https://i.postimg.cc/bvySknB2/Screenshot-from-2024-03-05-22-08-52.png)
 
 Install Argo CD using kubernets operator
 - [OperatorHub](https://operatorhub.io/operator/argocd-operator)
