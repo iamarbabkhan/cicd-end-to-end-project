@@ -63,8 +63,8 @@ download sonarqube scanner plugin
 Configure a Sonar Server
 ```
 sudo su -
-sudo su - sonarqube
 adduser sonarqube
+sudo su - sonarqube
 apt install unzip
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
 unzip *
