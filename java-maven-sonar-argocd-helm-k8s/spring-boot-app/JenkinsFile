@@ -24,11 +24,14 @@ pipeline {
             }
         }
 
-       stage('Build and Test') {
+        stage('Build and Test') {
             steps {
-                sh 'ls -ltr'
-                // build the project and create a JAR file
-                sh 'export JAVA_HOME=${JAVA_HOME} && cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
+                script {
+                    // Set JAVA_HOME for this block
+                    withEnv(["JAVA_HOME=/usr/local/openjdk-11"]) {
+                        sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
+                    }
+                }
             }
         }
 
