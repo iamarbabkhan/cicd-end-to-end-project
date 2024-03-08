@@ -5,14 +5,15 @@ pipeline {
             args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
         }
     }
-    
+
     tools {
         jdk 'jdk11'
         maven 'maven'
     }
-    
+
     environment {
         SCANNER_HOME = tool 'sonar-scanner'
+        JAVA_HOME = '/usr/local/openjdk-11'
     }
 
     stages {
@@ -23,11 +24,11 @@ pipeline {
             }
         }
 
-        stage('Build and Test') {
+       stage('Build and Test') {
             steps {
                 sh 'ls -ltr'
                 // build the project and create a JAR file
-                sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
+                sh 'export JAVA_HOME=${JAVA_HOME} && cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
             }
         }
 
