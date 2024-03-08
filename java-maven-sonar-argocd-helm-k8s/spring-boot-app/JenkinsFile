@@ -1,19 +1,6 @@
 pipeline {
-    agent {
-        docker {
-            image 'iamarbabkhan/maven-docker-agent:v1'
-            args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
-        }
-    }
-    tools {
-        jdk 'jdk11'
-        maven 'maven'
-    }
+    // ... (previous code)
 
-    environment {
-        SCANNER_HOME = tool 'sonar-scanner'
-    }
-    
     stages {
         stage('Checkout') {
             steps {
@@ -31,15 +18,15 @@ pipeline {
         }
 
         stage('Static Code Analysis') {
-            environment {
-                SONAR_URL = "http://localhost:9000"
-            }
-            stage('Sonarqube Analysis') {
-                steps {
+            steps {
+                script {
+                    environment {
+                        SONAR_URL = "http://localhost:9000"
+                    }
                     sh ''' 
-                        $SCANNER_HOME/bin/sonar-scanner -Dsonar.url=http://localhost:9000/ -Dsonar.login=squ_7356368dba0ea1edac548ffb01465813161458a4 -Dsonar.projectName=ultimate-cicd \
+                        $SCANNER_HOME/bin/sonar-scanner -Dsonar.url=http://localhost:9000/ -Dsonar.login=squ_7356368dba0ea1edac548ffb01465813161458a4 -Dsonar.projectName=shopping-cart \
                         -Dsonar.java.binaries=. \
-                        -Dsonar.projectKey=ultimate-cicd 
+                        -Dsonar.projectKey=shopping-cart 
                     '''
                 }
             }
