@@ -4,10 +4,7 @@ pipeline {
       image 'abhishekf5/maven-abhishek-docker-agent:v1'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
-  }  
-  environment {
-     SCANNER_HOME= tool 'sonar-scanner'
-    }
+  }
   stages {
     stage('Checkout') {
       steps {
@@ -22,11 +19,13 @@ pipeline {
         sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
       }
     }
-    stage('Sonarqube code Analysis') {
+    stage('Static Code Analysis') {
+      environment {
+        SONAR_URL = "http://34.201.116.83:9000"
+      }
       steps {
-     Dsonar.host.url=${SONAR_URL}'
-        sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.url=http://localhost:9000/ -Dsonar.login=squ_7356368dba0ea1edac548ffb01465813161458a4 -Dsonar.projectName=cicd-ent-to-end-project \
-        -Dsonar.projectKey=cicd-ent-to-end-project '''
+        withCredentials([string(credentialsId: 'sonarqube', variable: 'SONAR_AUTH_TOKEN')]) {
+          sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn sonar:sonar -Dsonar.login=$SONAR_AUTH_TOKEN -Dsonar.host.url=${SONAR_URL}'
         }
       }
     }
@@ -49,7 +48,7 @@ pipeline {
     stage('Update Deployment File') {
         environment {
             GIT_REPO_NAME = "cicd-end-to-end-project"
-            GIT_USER_NAME = "iamarbabkhan"
+            GIT_USER_NAME = "iamarbabhan"
         }
         steps {
             withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
