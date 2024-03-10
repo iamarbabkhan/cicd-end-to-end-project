@@ -147,4 +147,4 @@ to run argocd on my browse
 ```
 kubectl edit svc example-argocd-server
 ```
-edit `example-argocd-server` service and change `type:ClusterIp` to `NordPort`
+edit `example-argocd-server` service and change `type:ClusterIp` to `NodePort`
