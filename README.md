@@ -157,3 +157,12 @@ to see url
 ```
 minikube service list
 ```
+![Screenshot-from-2024-03-10-22-42-04.png](https://i.postimg.cc/rp7WRbVv/Screenshot-from-2024-03-10-22-42-04.png)
+- minikube will list out the url where i can access argocd
+![Screenshot-from-2024-03-10-22-45-11.png](https://i.postimg.cc/V6xkRQ2c/Screenshot-from-2024-03-10-22-45-11.png)
+- to login to argocd username is `admin` and for password
+```
+kubectl edit secret example-argocd-cluster
+```
+
+- by default argocd stores secret in `example-argocd-cluster`
