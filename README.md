@@ -148,3 +148,12 @@ to run argocd on my browse
 kubectl edit svc example-argocd-server
 ```
 edit `example-argocd-server` service and change `type:ClusterIp` to `NodePort`
+to execute argocd on browser 
+```
+minikube service argocd-server
+```
+- after executing this cmd minikube will generate url to access argocd
+to see url
+```
+minikube service list
+```
