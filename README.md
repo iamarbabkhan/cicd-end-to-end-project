@@ -141,3 +141,10 @@ Create a new Argo CD cluster
 kubectl apply -f argocd-basics.yml
 ```
 ![Screenshot-from-2024-03-10-22-18-56.png](https://i.postimg.cc/gJBT9g44/Screenshot-from-2024-03-10-22-18-56.png)
+to see argocd pods is created
+![Screenshot-from-2024-03-10-22-23-44.png](https://i.postimg.cc/T3L7mjdW/Screenshot-from-2024-03-10-22-23-44.png)
+to run argocd on my browse
+```
+kubectl edit svc example-argocd-server
+```
+edit `example-argocd-server` service and change `type:ClusterIp` to `NordPort`
