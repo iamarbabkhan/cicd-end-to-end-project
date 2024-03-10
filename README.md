@@ -166,3 +166,9 @@ kubectl edit secret example-argocd-cluster
 ```
 
 - by default argocd stores secret in `example-argocd-cluster`
+kubernetes secrets are base64 encrypted to decrypt
+```
+echo xxxxxxxxx(secret i have copied) | base64 -d
+```
+### CD(contineous delivery) part started
+- Create application -> application name -> sync policy (automatic) -> cluster url(https://kubernetes.default.svc) -> namespace(default)
