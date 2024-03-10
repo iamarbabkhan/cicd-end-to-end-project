@@ -93,7 +93,7 @@ add github credential
 Jenkins job succesfully executed
 ![Screenshot-from-2024-03-10-20-18-06.png](https://i.postimg.cc/mrhrxfzK/Screenshot-from-2024-03-10-20-18-06.png)
 source code quality check passed in sonarqube
-![Screenshot-from-2024-03-10-20-18-06.png](https://i.postimg.cc/mrhrxfzK/Screenshot-from-2024-03-10-20-18-06.png)
+![Screenshot-from-2024-03-10-20-19-05.png](https://i.postimg.cc/xCTc1J4p/Screenshot-from-2024-03-10-20-19-05.png)
 ```
 sudo su -
 sudo apt install docker.io -y
