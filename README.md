@@ -135,3 +135,9 @@ kubectl get pods -n operators
 - Argo CD is running perfectly
 ```
 ![Screenshot-from-2024-03-05-22-27-33.png](https://i.postimg.cc/MTDqQWT6/Screenshot-from-2024-03-05-22-27-33.png)
+Create a new Argo CD cluster
+![Screenshot-from-2024-03-10-22-15-16.png](https://i.postimg.cc/gjQj6KJ0/Screenshot-from-2024-03-10-22-15-16.png)
+```
+kubectl apply -f argocd-basics.yml
+```
+![Screenshot-from-2024-03-10-22-18-56.png](https://i.postimg.cc/gJBT9g44/Screenshot-from-2024-03-10-22-18-56.png)
