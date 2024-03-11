@@ -170,5 +170,9 @@ kubernetes secrets are base64 encrypted to decrypt
 ```
 echo xxxxxxxxx(secret i have copied) | base64 -d
 ```
+![image-2.png](https://i.postimg.cc/s2qBpRzq/image-2.png)
 ### CD(contineous delivery) part started
 - Create application -> application name -> project name(default) sync policy (automatic) -> cluster url(https://kubernetes.default.svc) -> namespace(default)
+![Screenshot-from-2024-03-10-23-19-34.png](https://i.postimg.cc/WzPytccG/Screenshot-from-2024-03-10-23-19-34.png)
+My application pods are running healthy
+![Screenshot-from-2024-03-11-00-11-47.png](https://i.postimg.cc/V5QvvRYr/Screenshot-from-2024-03-11-00-11-47.png)
