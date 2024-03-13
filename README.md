@@ -163,6 +163,7 @@ minikube service list
 ```
 ![Screenshot-from-2024-03-10-22-42-04.png](https://i.postimg.cc/rp7WRbVv/Screenshot-from-2024-03-10-22-42-04.png)
 - minikube will list out the url where i can access argocd
+
 ![Screenshot-from-2024-03-10-22-45-11.png](https://i.postimg.cc/V6xkRQ2c/Screenshot-from-2024-03-10-22-45-11.png)
 - to login to argocd username is `admin` and for password
 ```
@@ -177,6 +178,7 @@ echo xxxxxxxxx(secret i have copied) | base64 -d
 ![image-2.png](https://i.postimg.cc/s2qBpRzq/image-2.png)
 ### CD(contineous delivery) part started
 - Create application -> application name -> project name(default) sync policy (automatic) -> cluster url(https://kubernetes.default.svc) -> namespace(default)
+
 ![Screenshot-from-2024-03-10-23-19-34.png](https://i.postimg.cc/WzPytccG/Screenshot-from-2024-03-10-23-19-34.png)
 My application pods are running healthy
 ![Screenshot-from-2024-03-11-00-11-47.png](https://i.postimg.cc/V5QvvRYr/Screenshot-from-2024-03-11-00-11-47.png)
