@@ -1,9 +1,6 @@
 
 ### Ultimate CI/CD end to end pipeline
-clone the repository from github
-```
-git clone https://github.com/iamarbabkhan/cicd-end-to-end-project.git
-```
+![cicd project]([URL or file path](https://user-images.githubusercontent.com/43399466/228301952-abc02ca2-9942-4a67-8293-f76647b6f9d8.png)
 Pre-Requisites:
 - Java (JDK)
 Install Java
