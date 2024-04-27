@@ -1,0 +1,20 @@
+I successfully built and deployed my Java application by following these steps:
+1. Set up Jenkins and the necessary plugins like Git, Maven, Pipeline, and Kubernetes Continuous Deploy.
+
+2. Created a new Jenkins pipeline and configured it with my Java application's Git repository URL.
+
+3. Defined pipeline stages including checking out the source code, building the application with Maven, running unit tests, analyzing code quality with SonarQube, packaging the application, deploying to a test environment with Helm, running user acceptance tests, and promoting to production using Argo CD.
+
+4. Configured each stage to integrate with the corresponding tools and plugins.
+Installed Argo CD on my Kubernetes cluster, set up a Git repository for it, and created a Helm chart for my application.
+
+5. Added the Helm chart to the Git repository tracked by Argo CD and configured Jenkins to integrate with Argo CD by adding the API token.
+
+6. Ran the Jenkins pipeline to trigger the CI/CD process, monitored the stages, and addressed any issues that arose.
+
+With these steps, I automated the entire process of building and deploying my Java application using popular tools like SonarQube, Argo CD, Helm, and Kubernetes." #devopscommunity #devopsjob
+
+
+
+Linkedin connection notes:
+Hi, name. I just came across your profile on LinkedIn and was impressed by your expertise in [mention something specific, e.g., digital marketing]. As someone who is passionate about devops and cloud, I believe that connecting with professionals like yourself can be mutually beneficial.
